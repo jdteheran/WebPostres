@@ -1,0 +1,61 @@
+/*Estructura de cada componente de la galeria (imagen + descripcion)*/
+.container div{
+  width: 280px;
+  height: auto;
+  -webkit-transform:rotate(-3deg);
+  -webkit-transition: -webkit-transform 1s;
+  display:inline-block;
+  margin:15px 15px 0 10px;
+}
+
+/*Se rota ligeramente al posicionarnos encima del componente de la galeria (imagen + descripcion)*/
+.container div:hover{
+  -webkit-transform:rotate(0deg);
+}
+
+.container div img{
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0 10px #666;
+  border: 5px solid #FFF
+}
+
+
+/*Estructura de la descripcion, por defecto no se muestra*/
+.container div img ~ span{
+  width: 100%;
+  display:block;
+  opacity:0;
+  -webkit-transition: opacity 1s;
+  margin:7px 0;
+  padding:2px 5px;
+  border-radius: 10px;
+  color: black;
+  background-color: #FFDEAD;
+  text-align:center;
+  font-family: cursive;
+}
+
+/*Se muestra la descripcion al posicionar el cursor encima de la imagen*/
+.container div img:hover + span{
+  opacity:1;
+}
+
+.slider, .bx-wrapper {
+	display: none;
+}
+
+/*Media query de ejemplo para pantallas de alta resolucion
+  pero pueden haber mas, este media query permite mostrar hasta 5 imagenes por filas
+*/
+
+
+@media only screen and (max-width: 992px) {
+  .container {
+    display: none;
+  }
+
+  .slider, .bx-wrapper {
+  	display: block;
+  }
+}
