@@ -55,6 +55,16 @@ li a {
 	src: url(../font/FGAmura.otf);
 }
 
+@font-face {
+	font-family: Eutemia;
+	src: url(../font/Eutemia.ttf);
+}
+
+@font-face {
+	font-family: DOS;
+	src: url(../font/DOS_____.TTF);
+}
+
 .titulo {
 	font-family: Saginaw;
 	margin-top: 70px;
@@ -119,6 +129,13 @@ li a {
 	font-size: 60px;
 }
 
+.titulo-sec-4 {
+	font-family: Saginaw;
+	margin-top: 30px;
+	padding-top: 70px;
+	font-size: 60px;
+}
+
 .separador img{
 	width: 80%;
 	height: auto;
@@ -131,6 +148,11 @@ li a {
 
 .separador-slider-3 img {
 	width: 75%;
+	height: auto;
+}
+
+.separador-slider-4 img {
+	width: 50%;
 	height: auto;
 }
 
@@ -227,6 +249,47 @@ li a {
 	font-weight: bold;
 }
 
+.desarrollador span {
+	padding-left: 15px;
+	font-family: Eutemia;
+	font-size: 2em;
+}
+
+.desarrollador {
+	padding: 0px;
+  margin: 20px 0px 0px 0px;
+	font-family: DOS;
+	font-size: 2em;
+}
+
+.megusta p {
+	font-family: Bilbo-R;
+	font-size: 45px;
+	font-weight: bold;
+	margin-bottom: 50px;
+}
+
+.redes {
+	display: inline-flex;
+	margin-top: 100px;
+	margin-bottom: 30px;
+}
+
+#face, #insta, #twit {
+	padding-right: 50px;
+}
+
+.redes a img {
+	height: 120px;
+	width: auto;
+}
+
+@media only screen and (max-width: 1125px) {
+	.redes a img {
+		height: 100px;
+	}
+}
+
 @media only screen and (max-width: 992px) {
 		.slider img{
 			width: 65%;
@@ -284,11 +347,15 @@ li a {
 			width: 30%;
 			height: auto;
 		}
+
+		.redes a img {
+			height: 80px;
+		}
 }
 
 @media only screen and (max-width: 966px) {
-		.titulo, .titulo-sec-2, .titulo-sec-3  {
-			font-size: 40px;
+		.titulo, .titulo-sec-2, .titulo-sec-3, .titulo-sec-4  {
+			font-size: 50px;
 		}
 
 		#historia p {
@@ -339,12 +406,12 @@ li a {
 
 		.titulo, .titulo-sec-2  {
 			margin-top: 230px;
-			font-size: 30px;
+			font-size: 50px;
 		}
 
-		.titulo-sec-3 {
+		.titulo-sec-3, .titulo-sec-4 {
 			margin-top: 0px;
-			font-size: 30px;
+			font-size: 50px;
 		}
 
 		.titulo::before {
@@ -396,11 +463,54 @@ li a {
 			width: 55%;
 			height: auto;
 		}
+
+		.redes {
+			margin-top: 60px;
+			display: inline-grid;
+		}
+
+		.grupo1 {
+			padding-bottom: 20px;
+		}
+
+		.desarrollador span {
+			font-size: 1.8em;
+		}
+
+		.desarrollador {
+			font-size: 1.8em;
+		}
+
 }
 
 @media only screen and (max-width: 530px) {
+
+	.titulo, .titulo-sec-2  {
+		font-size: 30px;
+	}
+
+	.titulo-sec-3, .titulo-sec-4 {
+		font-size: 30px;
+	}
+
 	#historia p {
 		font-size: 1.7em;
 		padding-bottom: 20px;
+	}
+
+	.redes a img {
+		height: 60px;
+	}
+
+	.megusta p {
+		font-size: 25px;
+	}
+
+	.desarrollador span {
+		font-size: 1.5em;
+	}
+
+	.desarrollador {
+		font-size: 1.5em;
 	}
 }
