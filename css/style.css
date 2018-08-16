@@ -588,6 +588,10 @@ li a {
 }
 
 @media only screen and (max-width: 360px) {
+	.navbar-nav li a {
+		font-size: 13px;
+	}
+
 	.infoContac {
 		margin-bottom: 120px;
 	}
