@@ -11,6 +11,39 @@ $(document).ready(function(){
 
   $('.slider').bxSlider();
 
+  $("#post").click(function() {
+    $(this).attr("class","active");
+    $("#noso").removeClass();
+    $("#ped").removeClass();
+    $("#conta").removeClass();
+  });
 
+  $("#noso").click(function() {
+    $(this).attr("class","active");
+    $("#post").removeClass();
+    $("#ped").removeClass();
+    $("#conta").removeClass();
+  });
+
+  $("#ped").click(function() {
+    $(this).attr("class","active");
+    $("#post").removeClass();
+    $("#noso").removeClass();
+    $("#conta").removeClass();
+  });
+
+  $("#conta").click(function() {
+    $(this).attr("class","active");
+    $("#post").removeClass();
+    $("#noso").removeClass();
+    $("#ped").removeClass();
+  });
+
+  $("#logo").click(function() {
+    $("#post").attr("class","active");
+    $("#conta").removeClass();
+    $("#noso").removeClass();
+    $("#ped").removeClass();
+  });
 
 });
